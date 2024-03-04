@@ -1,0 +1,62 @@
+
+
+p {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray header background */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+audio {
+    width: 100%;
+}
+
+/* Adjust styles for audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: #f2f2f2; /* Light gray background for controls */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Add some padding */
+}
+
+.non-premium {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.non-premium form {
+    display: inline-block;
+}
+
+.non-premium form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.non-premium form input[type="submit"]:hover {
+    background-color: #45a049;
+}

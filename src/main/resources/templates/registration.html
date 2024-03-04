@@ -2,43 +2,51 @@
  <!DOCTYPE html>
 <html>
 <head>
-<title>REGISTER</title>
+<title>tunehub/registration</title>
+ <link rel="stylesheet" type="text/css" href="registration.css">
 </head>
 <body>
 
-<h2>Registration Form</h2>
+<h2>Register Yourself</h2>
 
 <form action="register" method="post">
 
-<label>Username:</label><br>
+<label class="required">Username:</label>
 <input type="text" name="username">
-<br><br>
+<br>
 
-<label>Email:</label><br>
+<label class="required">Email:</label>
 <input type="email" name="email">
-<br><br>
+<br>
 
-<label>Password:</label><br>
+<label class="required">Password:</label>
 <input type="password" name="password">
 <br><br>
 
-<label>Gender:</label><br>
+<label>Gender:</label>
 Male<input type="radio" name="gender" value="male">
 Female<input type="radio" name="gender" value="female">
 Other<input type="radio" name="gender" value="other">
 <br><br>
 
-<label>Role:</label><br>
+<label class="required">Role:</label>
 Admin<input type="radio" name="role" value="admin">
 Customer<input type="radio" name="role" value="customer">
 <br><br>
 
-<label>Address:</label><br>
+<label>Address:</label>
 <textarea name="address"></textarea>
 <br><br>
 
+    <label for="checkbox" class="required">I agree to the terms and conditions</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+    
+    <br><br>
+
 <input type="submit" value="SUBMIT">
 </form>
+
+
 
 </body>
 </html>

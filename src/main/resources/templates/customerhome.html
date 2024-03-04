@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CUSTOMER HOME</title>
+<title>tunehub/login/customerhome</title>
+<link rel="stylesheet" type="text/css" href="customerhome.css">
 </head>
 <body>
 	<p>Customer Home</p>
@@ -14,6 +15,10 @@
 	 </form>-->
 
 
+	
+	
+	<div th:unless="${ispremium}" class="non-premium">
+	
 	<form action="pay">
 		<input type="submit" value="GET PREMIUM">
 	</form>
@@ -24,6 +29,38 @@
 	<form action="logout">
 		<input type="submit" value="LOGOUT">
 	</form>
+	
+	</div>
+	
+	
+	<div th:if="${ispremium}" class="premium">
+	
+	<table border="1">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Artist</th>
+					<th>Genre</th>
+					<th>Play</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="s:${songs}">
+				<td th:text="${s.name}"></td>
+				<td th:text="${s.artist}"></td>
+				<td th:text="${s.genre}"></td>
+				
+				<td>
+					<audio controls>
+						<source th:src="${s.link}">
+					</audio>
+				 </td>
+				 
+				</tr>
+			</tbody>
+	</table>
+	
+	</div>
 
 
 </body>

@@ -1,0 +1,38 @@
+/* Styling the heading */
+h1 {
+    font-size: 24px;
+    color: #333; /* Dark gray color */
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+/* Styling the paragraph */
+p {
+    font-size: 16px;
+    color: #666; /* Medium gray color */
+    text-align: center;
+    margin-bottom: 30px; /* Spacing below the paragraph */
+}
+
+/* Styling the form container */
+#payment-form {
+    display: flex;
+    justify-content: center; /* Centering the form horizontally */
+}
+
+/* Styling the buy button */
+.buy-button {
+    background-color: #4CAF50; /* Green color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Styling the buy button on hover */
+.buy-button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}

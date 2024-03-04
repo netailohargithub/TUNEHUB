@@ -27,7 +27,7 @@ public class PlaylistController {
 	public String createPlaylists(Model model) {
 		List<Song> songList = songService.fetchAllSongs();
 		model.addAttribute("songs", songList);
-		return "createplaylists";
+		return "createplaylist";
 	}
 	
 	@PostMapping("/addplaylist")

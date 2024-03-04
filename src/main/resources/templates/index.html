@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>INDEX PAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tunehub</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 
+<video autoplay muted loop id="video-bg">
+    <source src="https://github.com/netailohargithub/SongList/raw/main/video.mp4.mp4" type="video/mp4">
+    
+</video>
+<h2>TuneHub</h2>
+
 <a href="login">LOGIN</a>
 <br/><br/>
 <a href="registration">REGISTER</a>
+
+<script>
+// JavaScript code for index.html
+
+// Function to handle click event on login link
+function handleLoginClick() {
+    alert("Redirecting to login page...");
+    // Add your code to redirect to the login page
+}
+
+// Function to handle click event on registration link
+function handleRegistrationClick() {
+    alert("Redirecting to registration page...");
+    // Add your code to redirect to the registration page
+}
+
+// Add event listeners to login and registration links
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("login").addEventListener("click", handleLoginClick);
+    document.getElementById("registration").addEventListener("click", handleRegistrationClick);
+});
+
+</script>
 </body>
 </html>
